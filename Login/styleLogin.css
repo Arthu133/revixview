@@ -1,0 +1,29 @@
+body{
+    background-color: #5f0024 !important;
+}
+
+.titulo{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.caixa{
+    margin-top: 80px;
+    padding: 20px;
+    background-color: #f3dbed !important;
+}
+
+.texto{
+    color: #7c122d !important;
+}
+
+h3{
+    color: #d81111 !important;
+
+}
+
+.btn{
+    background-color: black !important;
+    border: black !important;
+
+}
