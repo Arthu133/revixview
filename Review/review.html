@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styleReview.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/06c06c3fc2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Revix Reviews</title>
+</head>
+<body>
+    <div class="menu">
+        <a class="cabeca" href="#" style="height: 5cm; width: 5cm; text-decoration: none; list-style-type:none ; color: rgb(255, 255, 255); font-style: oblique;"><li>API Revix</li>
+        <a class="linkmenu" href="#"><li> Reviews</li></a>
+        <a class="linkmenu" href="#"><li>Filmes</li></a>
+   
+
+    </div>
+    <div class="container">
+        
+        <div class="addReview"><button class="btn"  data-toggle="modal" data-target="#reviewModal">Adicionar Novo Review</button></div>
+        <div class="meusReviews">
+
+         
+
+
+          </div>
+
+         
+ 
+        </div>
+
+    </div>
+    <div class="modal fade" id="reviewModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="loginModalLabel">Adicionar Review</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <div id="login-box" class="col-md-12">
+                    <form id="login-form" class="form" method="post">
+                        <h3 class="text-center">Novo Review</h3>
+                        <div class="form-group">
+                            <label for="nomeFilme" class = "texto">Nome do Filme</label><br>
+                            <input type="text" name="txt_nomeFilme" id="txt_nomeFilme" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="nota" class = "texto">Nota</label><br>
+                            <input type="text" name="txt_nota" id="txt_nota" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="descricao" class = "texto">Descrição</label><br>
+                            <input type="text" name="txt_descricao" id="txt_descricao" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="data" class = "texto">Data</label><br>
+                            <input type="text" name="txt_data" id="txt_data" class="form-control">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+              <button type="button" id="btn_salvar" class="btn btn-info">Salvar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script src="review.js"></script>
+
+<script>
+       document.getElementById('btn_salvar').addEventListener('click', adicionarNovoReview);
+
+</script>
+
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>    
+  
+</body>
+
+</html>
